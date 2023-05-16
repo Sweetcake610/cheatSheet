@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesPages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5af55e7126.js" crossorigin="anonymous"></script>
+    <script src="../script.js" async></script>
+    <title>JavaScript CheatSheet</title>
+</head>
+<body>
+    <header>
+        <h1>JavaScript Reference</h1>
+    </header>
+    <main>
+        <div class="element"><!--Variable Reference-->
+            <div class="elementHeader">
+                <h3>Variable Reference</h3>
+                <span class="arrow" ><i class="fa-solid fa-arrow-up fa-2x"></i></span>
+                <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
+            </div>
+            <div class="elementBody invisible">
+                <table class="elementTable">
+                    <tr>
+                        <td colspan="3" class="refName">A variable is data that is tored in it temporarily. Variables are declared by programmers.
+                            Programmers can declare variable by using var, let or const.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="code">var data = 'I am data';</td>
+                    </tr>
+                    <tr>
+                        <td class="code">let data = 'I am data';</td>
+                    </tr>
+                    <tr>
+                        <td class="code">const data = 'I am data';</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="element"><!--Datat Types Reference-->
+            <div class="elementHeader">
+                <h3>Primitive Data Types Reference</h3>
+                <span class="arrow" ><i class="fa-solid fa-arrow-up fa-2x"></i></span>
+                <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
+            </div>
+            <div class="elementBody invisible">
+                <table class="elementTable">
+                    <tr>
+                        <td colspan="3" class="refName">Data types are the building blocks of all languagues and essential pieces of any program.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="code">Strings</td>
+                        <td>Any grouping of keyboard characters surrounded by single or double quotes.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">Numbers</td>
+                        <td>Any number, including numbers with decimals.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">Boolean</td>
+                        <td>Either true or false with no quotations.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">Null</td>
+                        <td>Equivalent to zero. Can only be null.</td>
+                    </tr>
+                    <tr>
+                        <td class="code">Undefined</td>
+                        <td>Represents the absense of a value, the given value does not exist.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="element"><!--String Methods and Properties Reference-->
+            <div class="elementHeader">
+                <h3>String Methods and Properties</h3>
+                <span class="arrow" ><i class="fa-solid fa-arrow-up fa-2x"></i></span>
+                <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
+            </div>
+            <div class="elementBody invisible">
+                <table class="elementTable">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="refName">List of String Methods and Properties</th>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="refName">Property</th>
+                            <th scope="col" class="refName">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">data.length();</td>
+                            <td>Returns the number amount of characters in a string</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.indexOf();</td>
+                            <td>Returns the index location of the specified text.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.lastIndexOf();</td>
+                            <td>Returns the index of the last occurrence.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.search();</td>
+                            <td>Returns the position of the specified value</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.slice(start, end);</td>
+                            <td>Returns a string with the set start index position and end index position.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.replace();</td>
+                            <td>Replaces your previous string with a new string.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.toLowerCase();</td>
+                            <td>Returns a string with all lowercase characters.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">data.toUpperCase();</td>
+                            <td>Returns a string with all uppercase characters.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="element"><!--Number Methods and Properties Reference-->
+            <div class="elementHeader">
+                <h3>Number Methods and Properties</h3>
+                <span class="arrow" ><i class="fa-solid fa-arrow-up fa-2x"></i></span>
+                <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
+            </div>
+            <div class="elementBody invisible">
+                <table class="elementTable">
+                    <thead>
+                        <tr>
+                            <th colspan="2" class="refName">List of Number Methods and Properties</th>
+                        </tr>
+                        <tr>
+                            <th scope="col" class="refName">Property</th>
+                            <th scope="col" class="refName">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">(10).toString();</td>
+                            <td>Returns the number as a string</td>
+                        </tr>
+                        <tr>
+                            <td class="code">(10).toExponential();</td>
+                            <td>Returns a number written in exponential notation.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">(10).toFixed();</td>
+                            <td>Returns a number written with a number of decimals.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">(10).valueOf();</td>
+                            <td>Returns a number as a number.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </main>
+    <footer id="footer">
+        <nav class="pagesNav" id="nav">
+            <ul>
+                <li><a href="../index.html">Home Page</a></li>
+                <li><a href="./htmlPage.html">HTML</a></li>
+                <li><a href="./cssPage.html">CSS</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./stylesPages.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5af55e7126.js" crossorigin="anonymous"></script>
+    <script src="../script.js" async></script>
+    <title>CSS CheatSheet</title>
+</head>
+<body>
+    <header>
+        <h1>CSS REFERENCE</h1>
+    </header>
+    <main>
+        <div class="element">
+            <div class="elementHeader"> <!--Font Styling Div-->
+                <h3>Font Styling</h3>
+                <span class="arrow"><i class="fa-solid fa-arrow-up fa-2x"></i></span>
+                <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
+            </div>
+            <div class="elementBody invisible">
+                <table class="elementTable">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="refName">Property</th>
+                            <th scope="col" class="refName">Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">font-family</td>
+                            <td>Changes the typeface, font, of the text on the webpage.</td>
+                        
+                        </tr>
+                        <tr>
+                            <td class="code">@font-face</td>
+                            <td>Imports outside fonts directly into your stylesheet for the webpage. In order to use this property you must link the outside font url
+                                to your html document, extract rules labeled /*latin*/ from the url link and then paste the extracted rules to the style.css file.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">font-size</td>
+                            <td>Changes the size of the text on the webpage. Property requires a unit of measurement such as pixels (px), em, or percentages (%).</td>
+                        </tr>
+                        <tr>
+                            <td class="code">font-weight</td>
+                            <td>Changes the weight of the font on the webpage. Accepts values of normal, bold or even number values from 100 - 900.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">font-style</td>
+                            <td>Changes the style of the text on the webpage. Accepts values of normal, and italic.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">text-transform</td>
+                            <td>Text can be styled to appear in either all upercase or lowercase.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">text-align</td>
+                            <td>To move or align text using the following values: left, right, center, or justify.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">text-decoration</td>
+                            <td>Sets the appearance of decorative lines on text. Some of the values that are used are underline, overline, line-through, or none.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">line-height</td>
+                            <td>To avoid creating text that is difficult to read, you can modify the spacing between lines of text with the link-height property. 
+                                Preferred em measurements, but can also use pixels (px).</td>
+                        </tr>
+                        <tr>
+                            <td class="code">word-spacing</td>
+                            <td>Increases the spacing between words in a boyd of text. Preferred em measurements.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">letter-spacing</td>
+                            <td>Increasing the spacing between individual letters, the technical term for the spacing between letters is the kerning. Preferred em measurements.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="element"> <!--Css Colors-->
+            <div class="elementHeader">
+                <h3>Colors</h3>
+                <span class="arrow"><i class="fa-solid fa-arrow-up fa-2x"></i></span>
+                <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
+            </div>
+            <div class="elementBody invisible">
+                <table class="elementTable">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="refName" colspan="2">Property</th>
+                            
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">color
+                                <p>The foreground color</p>
+                            </td>
+                            <td class="code">background-color
+                                <p>The background color</p>
+                            </td>
+                        
+                        </tr>
+                        <tr>
+                            <th scope="col" class="refName" colspan="2">Description</th>
+                            
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="refName">Colors can be represented in one of these options listed below</td>
+                        </tr>
+                        <tr>
+                            <td class="code">named colors</td>
+                            <td>CSS has a total of 147 named colors. </td>
+                        </tr>
+                        <tr>
+                            <td class="code">RGB colors</td>
+                            <td>Represented in CSS by three numbers separated by commas in RGB order. Numbers range from 0 - 255.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">Hexadecimal Colors</td>
+                            <td>Hex values are just a different way to represent RGB color. Instead of three numbers you are using six hexadecimal numbers [0-9][A-F]</td>
+                        </tr>
+                        <tr>
+                            <td class="code">HSL colors</td>
+                            <td>HSL stands for Hue, Saturation and Lightness. Hue (color wheel representation) , Saturation (amount of gray in a given color), 
+                                and Lightness (amount of white in a given color)</td>
+                        </tr>
+                        <tr>
+                            <td class="code">opacity</td>
+                            <td>Opacity is a measure of how transparent a color is. This can be added to the end of your RGB or HSL, represented with an "a"</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="element"> <!--Css Box Model-->
+            <div class="elementHeader">
+                <h3>Box Model</h3>
+                <span class="arrow"><i class="fa-solid fa-arrow-up fa-2x"></i></span>
+                <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
+            </div>
+            <div class="elementBody invisible">
+                <table class="elementTable">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="refName">Property</th>
+                            <th scope="col" class="refName">Description</th>
+                        </tr>
+                        
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="code">Width & Height</td>
+                            <td>An elements box has two dimensions: a width and a hight. All boxes have default dimensions that are automatically
+                                set to hold the raw contents of the box.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">Margin</td>
+                            <td>The margin refers to the space directly outside of the box.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">Padding</td>
+                            <td>The space between the contents of a box and the borders of a box is known as padding.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">Border</td>
+                            <td>The border property defines the width, line style and color of the border of an elements box.</td>
+                        </tr>
+                        <tr>
+                            <td class="code">Visibility</td>
+                            <td>Elements can be hidden from view with the visibility property. It accepts two value: hidden or visible</td>
+                        </tr>
+                        <tr>
+                            <td class="code">Overflow</td>
+                            <td>The overflow property controls what happens to content when it spills, or overflows outside of its box.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div> 
+    </main>
+    <footer id="footer">
+        <nav class="pagesNav" id="nav">
+            <ul>
+                <li><a href="../index.html">Home Page</a></li>
+                <li><a href="./htmlPage.html">HTML</a></li>
+                <li><a href="./jsPage.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </footer>
+    
+</body>
+</html>
