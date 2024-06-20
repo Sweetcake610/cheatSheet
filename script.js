@@ -41,6 +41,6 @@ for(const element of elements) {
     })
 }
 
-loadFrontPageText(htmlFrontPage);
-loadFrontPageText(cssFrontPage);
-loadFrontPageText(jsFrontPage);
+// loadFrontPageText(htmlFrontPage);
+// loadFrontPageText(cssFrontPage);
+// loadFrontPageText(jsFrontPage);
