@@ -1,9 +1,28 @@
-//Import 
-import { htmlFrontPage, cssFrontPage, jsFrontPage } from "./modules/mainPageModes";
-
+//Global Elements
 const elements = document.getElementsByClassName('element');
 const mainDiv = document.getElementById('homeMainContent');
 
+//Main page objects
+const htmlFrontPage = {
+    title: 'HTML',
+    description: 'HTML (HyperText Markup Language)- a markup language is a computer language that defines the structure and presentation of raw text.',
+    image: '',
+    feature: ''
+}
+
+const cssFrontPage = {
+    title: 'CSS',
+    description: 'CSS (Cascade Styling Sheet)- is a language that web developers use to style the html content on a webpage. To style elements you need to specify two things: the property and the value.',
+    image: '',
+    feature: ''
+}
+
+const jsFrontPage = {
+    title: 'JavaScript',
+    description: 'JavaScript- is a widely used web-based programming language that powers the dynamic behavior on most websites.',
+    image: '',
+    feature: ''
+}
 
 
 const loadFrontPageText = function(obj) {
