@@ -4,18 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./stylesPages.css">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="./jsStylePage.css">
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5af55e7126.js" crossorigin="anonymous"></script>
-    <script src="../script.js" async></script>
+
     <title>JavaScript CheatSheet</title>
 </head>
 <body>
-    <header>
-        <span><i class="fa-brands fa-js"></i></span>
-        <h1>JavaScript Reference</h1>
+    <header class="header">
+        <span class="headerIcon"><i class="fa-brands fa-js fa-3x"></i></span>
+        <h1 class="headerInline">JavaScript Reference</h1>
+
+        <nav id="navLink">
+            <ul>
+                <li><a href="../index.html ">Home</a></li>
+                <li><a href= "../htmlPageFolder/htmlPage.html">HTML</a></li>
+                <li><a href="../cssPageFolder/cssPage.html">CSS</a></li>
+                <li><a href="./jsPageFolder/jsPage.html">JavaScript</a></li>
+                <li><a href=" ">More...</a></li>
+            </ul>
+         </nav>
     </header>
+
     <main>
+
+        <div class="sideNav">
+            <ul id="jsSideNavList">
+
+            </ul>
+        </div>
         <div class="element"><!--Variable Reference-->
             <div class="elementHeader">
                 <h3>Variable Reference</h3>
@@ -182,6 +200,8 @@
             </ul>
         </nav>
     </footer>
+
+    <script src="./jsPageScript.js"></script>
     
 </body>
 </html>

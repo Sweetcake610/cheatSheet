@@ -22,6 +22,7 @@ main {
     margin: 0px 0px 0px 10px;
     height: 600px;
     border-right: 10px solid #063970;
+    font-weight: 600;
 }
 
 #htmlSideNavList {
@@ -34,7 +35,7 @@ main {
     
  }
 
- #htmlSideNavList  li a {
+ #htmlSideNavList li a {
     padding: 10px 20px;
     color:#063970;
     text-decoration: none;

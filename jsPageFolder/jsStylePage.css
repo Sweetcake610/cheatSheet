@@ -1,3 +1,7 @@
+/* Styling for Header and main elements are located in the styles.css page */
+/* Main Page Styling for the HTML Reference Page */
+
+/* latin */
 @font-face {
     font-family: 'Pathway Extreme', sans-serif;
     font-style: normal;
@@ -14,36 +18,38 @@ main {
     height: auto;
     grid-template-columns: 30% 70%;
     column-gap: 20px;
-}
-.sideNav {
-   margin: 0px 0px 0px 10px;
-   height: 600px;
-   border-right: 10px solid #063970;
-   font-weight: 600;
+    font-family: 'Pathway Extreme';
 }
 
-#cssSideNavList {
+.sideNav {
+    margin: 0px 0px 0px 10px;
+    height: 600px;
+    border-right: 10px solid #063970;
+    font-weight: 600;
+}
+
+#jsSideNavList {
     list-style-type: none;
     margin-top: 25px;
  }
 
-#cssSideNavList li {
+#jsSideNavList li {
     margin: 15px;
     
  }
 
- #cssSideNavList  li a {
+#jsSideNavList li a {
     padding: 10px 20px;
     color:#063970;
     text-decoration: none;
  }
 
- #cssSideNavList li a:hover {
+#jsSideNavList li a:hover {
     background-color: #063970;
     color:#fff;
  }
 
- #cssSideNavList li a:active {
+#jsSideNavList li a:active {
     background-color: #063970;
     color: #fff;
  }
