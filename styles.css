@@ -99,6 +99,28 @@ body {
     padding: 5px 10px;
 
 }
+
+
+table, td, th {
+    border: 5px solid #063970;
+    border-radius: 5px;
+}
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin: 15px auto;
+}
+th {
+    height: 50px;
+    background-color: #063970;
+}
+td {
+    height: 25px;
+    padding: 10px;
+    text-align: center;
+    background-color: #0B75E5;
+    color: #fff;
+}
 /* End of Main Page Styling */
 
 /* Section 3: Footer */

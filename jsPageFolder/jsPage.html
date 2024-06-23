@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="./jsStylePage.css">
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5af55e7126.js" crossorigin="anonymous"></script>
@@ -28,12 +27,54 @@
     </header>
 
     <main>
-
+ <!-- This is the div class for the side navigation links to each section -->
         <div class="sideNav">
-            <ul id="jsSideNavList">
+            <ul id="jsSideNavList" class="sideNavList">
 
             </ul>
         </div>
+
+        <div class="introData">
+            <h2>Introduction to Javascript</h2>
+            <p>JavaScript is a widely used web-based programming language that powers the dynamic behavior on most websites.</p>
+        
+            <p>JavaScript allows you to make web pages more interactive by accessing and modifying the content and markup used
+                in a web page while it is being viewed in the browser.
+                <ol>
+                    <li>Access Content</li>
+                    <li>Modify Content</li>
+                    <li>Program Rules</li>
+                    <li>React to Events</li>
+                </ol>
+            </p>
+
+            <h3>What is Script?</h3>
+            <p>A script is a series of instructions that a computer can follow to achieve a goal.</p>
+            <p>To write a script, you need to first state your goal and then list the tasks that need to be completed in order
+                to achieve it. So a program must give the computer enough detail to perform the task as if every time were it first time.
+            </p>
+            <p>Start with the big picture of what you want to achieve and break that down into smaller steps.
+                <ol>
+                    <li>Define the Goal</li>
+                    <li>Design the Script</li>
+                    <li>Code each Step</li>
+                </ol>
+                Often scripts will need to perform different tasks in different situations. You can use flowcharts to work out how
+                the tasks fit together.
+
+                <table>
+                    <tr>
+                        <td>Generic Step</td>
+                        <td>Events</td>
+                    </tr>
+                    <tr>
+                        <td>Input or Output</td>
+                        <td>Decision</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+
         <div class="element"><!--Variable Reference-->
             <div class="elementHeader">
                 <h3>Variable Reference</h3>
@@ -192,13 +233,7 @@
 
     </main>
     <footer id="footer">
-        <nav class="pagesNav" id="nav">
-            <ul>
-                <li><a href="../index.html">Home Page</a></li>
-                <li><a href="./htmlPage.html">HTML</a></li>
-                <li><a href="./cssPage.html">CSS</a></li>
-            </ul>
-        </nav>
+        <p>Links</p>
     </footer>
 
     <script src="./jsPageScript.js"></script>
