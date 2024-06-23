@@ -16,7 +16,7 @@ body {
 }
 
 /* Section 1:  Header Styling: Style used across all pages */
-#header {
+.header {
     margin: 0px auto;
     padding: 10px 5px;
     height: 180px;
@@ -31,7 +31,7 @@ body {
     margin: 10px;
 }
  
-#header h1 {
+.header h1 {
     margin: 20px auto 5px;
     font-size: 30px;
     display: inline;

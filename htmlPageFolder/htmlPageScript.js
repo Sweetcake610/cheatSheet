@@ -1,5 +1,4 @@
-const sideNav = document.getElementsByClassName('sideNav');
-const sideNavList = document.getElementById('htmlSideNavList');
+const sideNavListHTML = document.getElementById('htmlSideNavList');
 
 
 const sideNavLinks = ['HTML Intro', 'Body Elements', 'Link Elements', 
@@ -10,5 +9,5 @@ const sideNavLinks = ['HTML Intro', 'Body Elements', 'Link Elements',
 sideNavLinks.forEach(function(navItem) {
     const listItem = document.createElement('li');
     listItem.innerHTML = `<a href='#'>${navItem}</a>`;
-    sideNavList.appendChild(listItem);
+    sideNavListHTML.appendChild(listItem);
 });
