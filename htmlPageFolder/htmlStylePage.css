@@ -8,11 +8,11 @@ main {
     width: 100%;
     height: auto;
     grid-template-columns: 25% 75%;
-    column-gap: 20px;
+    column-gap: 10px;
 }
 .sideNav {
    margin: 0px 0px 0px 10px;
-    height: 700px;
+    height: 1000px;
     border-right: 10px solid #063970;
     border-bottom: 10px solid #063970;
     font-weight: 600;
@@ -33,6 +33,7 @@ main {
     padding: 10px 20px;
     color:#063970;
     text-decoration: none;
+    line-height: 2.0;
  }
 
  .sideNavList li a:hover {
@@ -45,7 +46,21 @@ main {
     color: #fff;
  }
 
- .introData {
+ .contentData {
    width: 90%;
    margin: 10px 0px 0px 10px;
+}
+
+.code {
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+   font-size: 1.4rem;
+   font-weight: 700;
+   background-color: #D1CECD;
+   padding: 10px 0px;
+   width: 50%;
+   margin: 20px auto;
+}
+.centerText {
+   text-align: center;
 }

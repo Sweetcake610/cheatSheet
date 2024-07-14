@@ -32,6 +32,26 @@
 
             </ul>
         </div>
+
+        <div class="contentData" id="cssIntro">
+            <h2>CSS: Cascading Style Sheets</h2>
+            <h3>What is CSS?</h3>
+            <p>Css is a language that web developers use to style the html content on a web page.</p>
+
+            <h3>Style Tag (Internal Stylesheet)</h3>
+            <p>Although CSS is a different language from html, we can write CSS code directly into html file by using the style tag.
+                <p class="code">Exp: &lt;style&gt;.......&lt;/style&gt;</p>
+                The style element allows you to write CSS code between its opening and closing tags. 
+                The style element must be placed inside the head of the html file.
+            </p>
+
+            <h3>The .CSS File</h3>
+            <p>Putting both HTML and CSS coding in one file can cause confusion for web developers and makes coding harder to read easily.
+                So you can create a CSS file by using the .CSS file name extension, like so:
+                <p class="code">Exp: style.css</p>
+                When placing CSS code in a CSS file, in order for it to apply to the HTML file you have to link the HTML file and the CSS file together.
+            </p>
+        </div>
         <div class="element">
             <div class="elementHeader"> <!--Font Styling Div-->
                 <h3>Font Styling</h3>
@@ -99,62 +119,40 @@
             </div>
         </div>
 
-        <div class="element"> <!--Css Colors-->
-            <div class="elementHeader">
-                <h3>Colors</h3>
-                <span class="arrow"><i class="fa-solid fa-arrow-up fa-2x"></i></span>
-                <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
-            </div>
-            <div class="elementBody invisible">
-                <table class="elementTable">
-                    <thead>
-                        <tr>
-                            <th scope="col" class="refName" colspan="2">Property</th>
-                            
-                        </tr>
-                        
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="code">color
-                                <p>The foreground color</p>
-                            </td>
-                            <td class="code">background-color
-                                <p>The background color</p>
-                            </td>
-                        
-                        </tr>
-                        <tr>
-                            <th scope="col" class="refName" colspan="2">Description</th>
-                            
-                        </tr>
-                        <tr>
-                            <td colspan="2" class="refName">Colors can be represented in one of these options listed below</td>
-                        </tr>
-                        <tr>
-                            <td class="code">named colors</td>
-                            <td>CSS has a total of 147 named colors. </td>
-                        </tr>
-                        <tr>
-                            <td class="code">RGB colors</td>
-                            <td>Represented in CSS by three numbers separated by commas in RGB order. Numbers range from 0 - 255.</td>
-                        </tr>
-                        <tr>
-                            <td class="code">Hexadecimal Colors</td>
-                            <td>Hex values are just a different way to represent RGB color. Instead of three numbers you are using six hexadecimal numbers [0-9][A-F]</td>
-                        </tr>
-                        <tr>
-                            <td class="code">HSL colors</td>
-                            <td>HSL stands for Hue, Saturation and Lightness. Hue (color wheel representation) , Saturation (amount of gray in a given color), 
-                                and Lightness (amount of white in a given color)</td>
-                        </tr>
-                        <tr>
-                            <td class="code">opacity</td>
-                            <td>Opacity is a measure of how transparent a color is. This can be added to the end of your RGB or HSL, represented with an "a"</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
+        <div class="contentData" id="color"> <!--Css Colors-->
+            <h2>Colors</h2>
+            <!-- <span class="arrow"><i class="fa-solid fa-arrow-up fa-2x"></i></span>
+            <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span> -->
+            <p>
+                In CSS its important to make two distinctions about color. Color can affect the following design aspects.
+                <h3 class="centerText">The foreground color </h3>
+                <p class="code">Exp: color: red;</p> 
+                <h3 class="centerText">The background color</h3>
+                <p class="code">Exp: background-color: red;</p>
+                Foreground color is the color that an element appears in. The background color is the color that an elements background appears in.
+                <br>
+                CSS has a total of 147b named colors. YOu can google this information without having to remember. To take advantage of the full 
+                spectrum of colors that CSS supports you have the option of using RGB colors. There are 16,777,216 possible colors.
+            </p>
+            <h3>RGB Colors</h3>
+            <p>
+                RGB colors are represented in CSS by three numbers separated by commas in that order. RGB colors can be used for both foreground and 
+                background colors.
+                <p class="code">Exp: p { color: rgb(123, 20, 233); }</p>
+                Online resources are available for correct number combo.
+            </p>
+            <h3>Hexadecimal Color Codes</h3>
+            <p>
+                Often referred to as hex color codes for short, Hex color codes also offer 16,777,2216 options, but they follow a different syntax.
+                with RGB color mixture the values are in base 10, hex color codes use base 16 or hexdecimal base.
+                <p class="centerText">Exp: RGB (0--256, 0--256, 0--256) and HEX (#[0-9][A-F])</p>
+                <p class="code">Exp: h1 { color: #09AA34; }</p>
+                When read from left to right, each group of two characters responds to a value for red, green and blue. All hex color codes begin with
+                a '#' character.
+                <br>
+                When a hex code is composed entirely of the same characters, the hex color can be abbreviated.
+                <p class="code">Exp: h1 {color: #FFFFFF; or color: #FFF; }</p>
+            </p>
         </div>
 
         <div class="element"> <!--Css Box Model-->
