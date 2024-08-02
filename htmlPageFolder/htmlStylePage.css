@@ -41,9 +41,9 @@ main {
     color:#fff;
  }
 
- .sideNavList li a:active {
+ .focus {
     background-color: #063970;
-    color: #fff;
+    color: #fff !important;
  }
 
  .contentData {

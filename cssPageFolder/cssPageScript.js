@@ -19,4 +19,5 @@ sideNavLinks.forEach(function(navItem) {
     const listItem = document.createElement('li');
     listItem.innerHTML = `<a href='#${navItem.id}'>${navItem.name}</a>`;
     sideNavListCSS.appendChild(listItem);
+
 });
