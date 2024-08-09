@@ -11,3 +11,28 @@ sideNavLinks.forEach(function(navItem) {
     listItem.innerHTML = `<a href='#'>${navItem}</a>`;
     sideNavListJS.appendChild(listItem);
 });
+
+//Function adds color background and text change under class focus to the side nav link element that is click.
+//It then goes through all the other links in the sideNavListJS and remove focus if it is not the current event target of the click.
+const addFocusToSideLinks = function() {
+    let mainPageSideLink = sideNavListJS .children[0].firstChild;
+    let allPageSideLinks = sideNavListJS .children;
+   
+    mainPageSideLink.classList.add('focus');
+
+    sideNavListJS.addEventListener('click', function(evt) {
+        let currentLink = evt.target;
+
+        if (currentLink) {
+            currentLink.classList.add('focus'); 
+            for (let i = 0; i < allPageSideLinks.length; i++) {
+                if (allPageSideLinks[i].firstChild !== currentLink) {
+                    allPageSideLinks[i].firstChild.classList.remove('focus');
+                }
+                
+            }
+        } 
+
+       
+    });
+}();
