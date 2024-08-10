@@ -1,8 +1,8 @@
 /* Styling for Header and main elements are located in the styles.css page */
 /* Main Page Styling for the HTML Reference Page */
-@import url('../styles.css');
+@import url('./styles.css');
 
-
+/* Main content layout for each page that is not the homepage */
 main {
     display: grid;
     width: 100%;
@@ -10,6 +10,8 @@ main {
     grid-template-columns: 25% 75%;
     column-gap: 10px;
 }
+
+/*Styling for Side Navigation on each page that is not the homepage */
 .sideNav {
    margin: 0px 0px 0px 10px;
     height: 1000px;
@@ -26,7 +28,6 @@ main {
 
  .sideNavList li {
     margin: 15px;
-    
  }
 
  .sideNavList li a {
@@ -45,7 +46,9 @@ main {
     background-color: #063970;
     color: #fff !important;
  }
+ /* End of side nav styling */
 
+/* Additional Styling for main content on each page that is not the homepage */
  .contentData {
    width: 90%;
    margin: 10px 0px 0px 10px;
@@ -64,3 +67,25 @@ main {
 .centerText {
    text-align: center;
 }
+
+table, td, th {
+   border: 5px solid #063970;
+   border-radius: 5px;
+}
+table {
+   width: 40%;
+   border-collapse: collapse;
+   margin: 15px auto;
+}
+th {
+   height: 50px;
+   background-color: #063970;
+}
+td {
+   height: 25px;
+   padding: 10px;
+   text-align: center;
+   background-color: #0B75E5;
+   color: #fff;
+}
+/* End of main content styling */
