@@ -51,7 +51,7 @@
                         A web browser must know what language a document is written in before they can process the contects of the document.
                         <br>
                         To do this you need a: 
-                        <p class="code">
+                        <p class="code centerText">
                             Document Type Declaration 
                             <br>
                             HTML use &lt;!DOCTYPE html&gt; 
@@ -67,7 +67,7 @@
                     <p>
                         To begin adding HTML structure and content, we must first add opening and closing tags. Without these tags it's possible that
                         browsers could incorrectly interpret your html code. 
-                        <p class="code">&lt;html&gt;Enter code here &lt;/html&gt;</p>
+                        <p class="code centerText">&lt;html&gt;Enter code here &lt;/html&gt;</p>
                     </p>
                     
                     <h3>HTML Anatomy</h3>
@@ -77,17 +77,64 @@
                         <li>Opening Tag [html tag used to start an html element]</li>
                         <li>Closing Tag [html tag to end an html element. Closing tags have a forward slash inside them.]</li>
                     </ol>
-                    <p class="code"> &lt;p&gt; Hello World! &lt;/p&gt;</p>
+                    <p class="code centerText"> &lt;p&gt; Hello World! &lt;/p&gt;</p>
 
 
                     <h3>Head Element</h3>
                     <p>
                         The head element will contain information about the page that isn't displayed directly on the actual web page, which is also
                         called the metadata.
-                        <p class="code">&lt;head&gt; Enter code here &lt;/head&gt;</p>
+                        <p class="code centerText">&lt;head&gt; Enter code here &lt;/head&gt;</p>
                     </p>
 
-                </div>
+                    <h3>Page Titles</h3>
+                    <p>
+                        The title element adds the webpage title to the browser. The title tag is placed inside the head tag.
+                        <p class="code centerText">&lt;title&gt; Enter code here &lt;/title&gt;</p>
+                    </p>
+
+                    <h3>Body Tag</h3>
+                    <p>
+                        The body tag stores the content that is shown on a webpage. Text, videos, images and links are all placed inside the body tag.
+                        <p class="code centerText">&lt;body&gt; Enter code here &lt;/body&gt;</p>
+                    </p>
+
+                    <p>
+                        All the code just discussed (html, head, title, body) demonstrates what is sometimes referred to as boilerplate code. It's a term
+                        used to describe the basic html code required to begin creating a webpage.
+                        
+                        <h3>Boilerplate Code Exp:</h3>
+                        <p class="code">
+                            &lt;html&gt; <br>
+                                <span class='indentOne'>&lt;head&gt;</span> 
+                                <br>
+                                    <span class=indentTwo>&lt;title&gt; Title Here &lt;/title&gt;</span> 
+                                <br>
+                                <span class='indentOne'>&lt;/head&gt;</span> 
+                                <br>    
+                                <span class='indentOne'>&lt;body&gt;</span> 
+                                <br>
+                                    <span class=indentTwo>&lt;p&gt; Enter text here &lt;/p&gt;</span> 
+                                <br>
+                                    <span class='indentOne'>&lt;/body&gt;</span> 
+                                <br>
+                            &lt;/html&gt;
+                        </p>
+                    </p>
+
+                    <h3>HTML Structure</h3>
+                    <p>
+                        Html documents are organized as a collection of parent-child relationships. The child element is said to be nested
+                        inside of the parent element. There can be multiple levels of nesting
+                    </p>
+
+                    <h3>Whitespace</h3>
+                    <p>
+                        Programmers use two tools to visualize relationships betweeen elements: whitespace and indentation. The World Wide Web Consortium,
+                        or W3C, standard recommends 2 spaces of indentation when writing html code. (Refer to the boilerplate code above for example.)
+                    </p>
+
+                </div> <!--End of HTML Intro section-->
 
                 <div class="contentData" id="bodyEle">
                     <h2>Body Elements</h2>

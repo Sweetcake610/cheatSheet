@@ -64,16 +64,24 @@ main {
 
 .code {
    font-family: 'Times New Roman', Times, serif;
-   text-align: center;
+   /* text-align: center; */
    font-size: 1.4rem;
    font-weight: 700;
    background-color: #D1CECD;
    padding: 10px 0px;
-   width: 50%;
+   width: 60%;
    margin: 20px auto;
+   padding: 5px;
+   line-height: 1.5;
 }
 .centerText {
    text-align: center;
+}
+.indentOne {
+    margin-left: 10px;
+}
+.indentTwo {
+    margin-left: 20px;
 }
 
 h2 {
