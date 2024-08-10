@@ -4,30 +4,34 @@
 
 /* Main content layout for each page that is not the homepage */
 main {
-    display: grid;
     width: 100%;
     height: auto;
-    grid-template-columns: 25% 75%;
-    column-gap: 10px;
+    display: flex;
+    
 }
 
 /*Styling for Side Navigation on each page that is not the homepage */
 .sideNav {
-   margin: 0px 0px 0px 10px;
-    height: 1000px;
+    margin: 0px 0px 0px 15px;
+    height: 800px;
+    width: 20%;
     border-right: 10px solid #063970;
-    border-bottom: 10px solid #063970;
     font-weight: 600;
-    box-shadow: 5px 10px 5px #0957AA;
+    box-shadow: 5px 0px 5px #0957AA;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+
 }
 
 .sideNavList {
     list-style-type: none;
     margin-top: 25px;
+    padding: 0px 10px;
  }
 
  .sideNavList li {
-    margin: 15px;
+    margin: 10px 0px;
  }
 
  .sideNavList li a {
@@ -49,6 +53,10 @@ main {
  /* End of side nav styling */
 
 /* Additional Styling for main content on each page that is not the homepage */
+.contentDiv {
+    width: 80%;
+    margin-left: 20px;
+}
  .contentData {
    width: 90%;
    margin: 10px 0px 0px 10px;
@@ -66,6 +74,11 @@ main {
 }
 .centerText {
    text-align: center;
+}
+
+h2 {
+    text-decoration: underline #0957AA 5px;
+    text-transform: uppercase;
 }
 
 table, td, th {
