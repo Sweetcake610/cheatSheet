@@ -42,9 +42,7 @@ const addFocusToSideLinks = function() {
                 }
                 
             }
-        } 
-
-       
+        }
     });
 
 }();

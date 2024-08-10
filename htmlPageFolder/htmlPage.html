@@ -1,188 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./htmlStylePage.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/5af55e7126.js" crossorigin="anonymous" data-auto-replace-svg="nest"></script>
-    
-    <title>HTML CheatSheet</title>
-</head>
-<body>
-    <header class="header">
-        <span class="headerIcon"><i class="fa-solid fa-file-code fa-3x"></i></span>
-        <h1 class="headerInline">HTML Reference Page</h1>
-
-        <nav id="navLink">
-            <ul>
-                <li><a href="../index.html ">Home</a></li>
-                <li><a href= "./htmlPageFolder/htmlPage.html">HTML</a></li>
-                <li><a href="../cssPageFolder/cssPage.html">CSS</a></li>
-                <li><a href="../jsPageFolder/jsPage.html">JavaScript</a></li>
-                <li><a href=" ">More...</a></li>
-            </ul>
-         </nav>
-    </header>
-
-    <main>
-
-        <div class="sideNav">
-            <ul id="htmlSideNavList" class="sideNavList">
-
-            </ul>
-        </div>
-
-        <div class="contentData" id="htmlIntro">
-            <h2>Intro to HTML</h2>
-
-            <h3>What is HTML?</h3>
-            <p>
-                HTML = <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage 
-                <br>
-                A markup language is a computer language that defines the structure and presentation of raw text.
-                <br>
-                HyperText is text displayed on a computer or device that provides access to other text through, links, also know "hyperlinks".
-            </p>
-
-            <h3>!DOCTYPE html</h3>
-            <p>
-                A web browser must know what language a document is written in before they can process the contects of the document.
-                <br>
-                To do this you need a: 
-                <p class="code">
-                    Document Type Declaration 
-                    <br>
-                    HTML use &lt;!DOCTYPE html&gt; 
-                </p>
-                (This must be the <u>frist line</u> of <u>code</u> in all html documents)
-                <br>
-                This declaration is an instruction. It tells the browser what type of document to expect and what version of html is being used.
-                <br>
-                The DOCTYPE is used for html5. Other versions like html4 or Xhtml 1.0 have different DOCTYPES.
-            </p>
-
-            <h3>Preparing HTML Dcouments</h3>
-            <p>
-                To begin adding HTML structure and content, we must first add opening and closing tags. Without these tags it's possible that
-                browsers could incorrectly interpret your html code. 
-                <p class="code">&lt;html&gt;Enter code here &lt;/html&gt;</p>
-            </p>
-            
-            <h3>HTML Anatomy</h3>
-            <ol>
-                <li>Angle Brackets [&lt; &gt;]</li>
-                <li>Html element or element [code inside the angle brackets]</li>
-                <li>Opening Tag [html tag used to start an html element]</li>
-                <li>Closing Tag [html tag to end an html element. Closing tags have a forward slash inside them.]</li>
-            </ol>
-            <p class="code"> &lt;p&gt; Hello World! &lt;/p&gt;</p>
-
-
-            <h3>Head Element</h3>
-            <p>
-                The head element will contain information about the page that isn't displayed directly on the actual web page, which is also
-                called the metadata.
-                <p class="code">&lt;head&gt; Enter code here &lt;/head&gt;</p>
-            </p>
-
-        </div>
-
-        <div class="contentData" id="bodyEle">
-            <div class="elementHeader">
-                <h3>Header Reference</h3>
-                <span class="arrow" ><i class="fa-solid fa-arrow-up fa-2x"></i></span>
-                <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
-            </div>
-            <div class="elementBody invisible">
-                <table class="elementTable">
-                    <tr>
-                        <td colspan="3" class="refName">HTML has 6 different heading elements ranging from largest to smallest in size.</td>
-                    </tr>
-                    <tr>
-                        <td class="code">&lt;h1&gt; &lt;/h1&gt;<h1>Header 1</h1></td>
-                        <td class="code">&lt;h2&gt; &lt;/h2&gt;<h2>Header 2</h2></td>
-                        <td class="code">&lt;h3&gt; &lt;/h3&gt;<h3>Header 3</h3></td>
-                    </tr>
-                        
-                    <tr>
-                        <td class="code">&lt;h4&gt; &lt;/h4&gt;<h4>Header 4</h4></td>
-                        <td class="code">&lt;h5&gt; &lt;/h5&gt;<h5>Header 5</h5></td>
-                        <td class="code">&lt;h6&gt; &lt;/h6&gt;<h6>Header 6</h6></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-            <div class="element">
-                <div class="elementHeader">
-                    <h3>Paragraph Reference</h3>
-                    <span class="arrow"><i class="fa-solid fa-arrow-up fa-2x"></i></span>
-                    <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
-                </div>
-                <div class="elementBody invisible">
-                    <table class="elementTable">
-                        <tr>
-                            <td class="refName">
-                                The paragraph element is the commonly used way to store raw text in an html webpage
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="code">&lt;p&gt; &lt;/p&gt;<p>paragraph</p></td>
-                        </tr>    
-                    </table>
-                </div>
-            </div>
-
-            <div class="element">
-                <div class="elementHeader">
-                    <h3>Lists Reference</h3>
-                    <span class="arrow"><i class="fa-solid fa-arrow-up fa-2x"></i></span>
-                    <span class="arrow invisible"><i class="fa-solid fa-arrow-up fa-2x fa-flip-vertical"></i></span>
-                </div>
-                <div class="elementBody invisible">
-                    <table class="elementTable">
-                        <tr>
-                            <td class="refName">There are two main list types used in html: unordered and ordered list. Both types cannot hold raw
-                                    text and connot automatically format raw text with bullet or numbered points. Individual list items must be added
-                                    to the lists using the list item tag.</td>
-                        </tr>
-                        <tr>
-                            <td class="code">&lt;ul&gt; &lt;li&gt; &lt;/li&gt; &lt;/ul&gt;
-                                <ul class="listRef">
-                                    <li>item 1</li>
-                                    <li>item 2</li>
-                                    <li>item 3</li> 
-                                </ul>
-                            </td>
-                        </tr>
-                            
-                        <tr>
-                            <td class="code">&lt;ol&gt; &lt;li&gt; &lt;/li&gt; &lt;/ol&gt;
-                                <ol class="listRef">
-                                    <li>item 1</li>
-                                    <li>item 2</li>
-                                    <li>item 3</li> 
-                                </ol>
-                            </td>
-                        </tr>
-                        
-                    </table>
-                </div>
-            </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./htmlStylePage.css" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Pathway+Extreme:wght@500;700&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/5af55e7126.js" crossorigin="anonymous" data-auto-replace-svg="nest"></script>
         
-        <div class="html section" >
-            
-            <table class="header">
+        <title>HTML CheatSheet</title>
+    </head>
+    <body>
+        <header class="header">
+            <span class="headerIcon"><i class="fa-solid fa-file-code fa-3x"></i></span>
+            <h1 class="headerInline">HTML Reference Page</h1>
+
+            <nav id="navLink">
+                <ul>
+                    <li><a href="../index.html ">Home</a></li>
+                    <li><a href= "./htmlPageFolder/htmlPage.html">HTML</a></li>
+                    <li><a href="../cssPageFolder/cssPage.html">CSS</a></li>
+                    <li><a href="../jsPageFolder/jsPage.html">JavaScript</a></li>
+                    <li><a href=" ">More...</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+
+            <div class="sideNav">
+                <ul id="htmlSideNavList" class="sideNavList">
+
+                </ul>
+            </div>
+
+            <div class="contentData" id="htmlIntro">
+                <h2>Intro to HTML</h2>
+
+                <h3>What is HTML?</h3>
+                <p>
+                    HTML = <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage 
+                    <br>
+                    A markup language is a computer language that defines the structure and presentation of raw text.
+                    <br>
+                    HyperText is text displayed on a computer or device that provides access to other text through, links, also know "hyperlinks".
+                </p>
+
+                <h3>!DOCTYPE html</h3>
+                <p>
+                    A web browser must know what language a document is written in before they can process the contects of the document.
+                    <br>
+                    To do this you need a: 
+                    <p class="code">
+                        Document Type Declaration 
+                        <br>
+                        HTML use &lt;!DOCTYPE html&gt; 
+                    </p>
+                    (This must be the <u>frist line</u> of <u>code</u> in all html documents)
+                    <br>
+                    This declaration is an instruction. It tells the browser what type of document to expect and what version of html is being used.
+                    <br>
+                    The DOCTYPE is used for html5. Other versions like html4 or Xhtml 1.0 have different DOCTYPES.
+                </p>
+
+                <h3>Preparing HTML Dcouments</h3>
+                <p>
+                    To begin adding HTML structure and content, we must first add opening and closing tags. Without these tags it's possible that
+                    browsers could incorrectly interpret your html code. 
+                    <p class="code">&lt;html&gt;Enter code here &lt;/html&gt;</p>
+                </p>
                 
-            </table>
-        </div>
-    </main>
-    <footer>
-        <p>Links</p>
-    </footer>
-    <script src="./htmlPageScript.js"></script>
-    
-</body>
+                <h3>HTML Anatomy</h3>
+                <ol>
+                    <li>Angle Brackets [&lt; &gt;]</li>
+                    <li>Html element or element [code inside the angle brackets]</li>
+                    <li>Opening Tag [html tag used to start an html element]</li>
+                    <li>Closing Tag [html tag to end an html element. Closing tags have a forward slash inside them.]</li>
+                </ol>
+                <p class="code"> &lt;p&gt; Hello World! &lt;/p&gt;</p>
+
+
+                <h3>Head Element</h3>
+                <p>
+                    The head element will contain information about the page that isn't displayed directly on the actual web page, which is also
+                    called the metadata.
+                    <p class="code">&lt;head&gt; Enter code here &lt;/head&gt;</p>
+                </p>
+
+            </div>
+
+            <div class="contentData" id="bodyEle">
+                <h2>Body Elements</h2>
+            </div>
+
+            <div class="contentData" id="linkEle">
+                <h2>Link Elements</h2>
+            </div>
+
+            <div class="contentData" id="extraEle">
+                <h2>Extra Elements</h2>
+            </div>
+            
+            <div class="contentData" id="tables">
+                <h2>Tables</h2>
+            </div>
+
+            <div class="contentData" id="forms">
+                <h2>Forms</h2>
+            </div>
+
+            <div class="contentData" id="markups">
+                <h2>Extra Markups</h2>
+            </div>
+
+            <div class="contentData" id="images">
+                <h2>Images</h2>
+            </div>
+
+            <div class="contentData" id="semantic">
+                <h2>Semantic HTML</h2>
+            </div>
+
+            <div class="contentData" id="videoAudio">
+                <h2>Flash, Video and Audio</h2>
+            </div>
+
+            
+            
+        </main>
+
+        <footer>
+            <p>Links</p>
+        </footer>
+
+
+        <script src="./htmlPageScript.js"></script>
+        
+    </body>
 </html>

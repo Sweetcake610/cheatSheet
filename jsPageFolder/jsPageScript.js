@@ -1,14 +1,28 @@
 const sideNavListJS = document.getElementById('jsSideNavList');
 
 
-const sideNavLinks = ['JavaScript Intro', 'Basic JS Variables', 'Control Flow', 
-    'Intro to Functions', 'Scope', 'Arrays', 'Loops', 'Iterators', 'Objects', 'Classes',
-'Browser Compatibility & Transpilation', 'Modules', 'Promises', 'Async-Await', 'Requests'];
+const sideNavLinks = [
+    {id: 'jsIntro', name: 'JavaScript Intro'}, 
+    {id: 'jsVariables', name: 'Basic JS Variables'},
+    {id: 'controlFlow', name: 'Control Flow'}, 
+    {id: 'functions', name: 'Intro to Functions'}, 
+    {id: 'scope', name: 'Scope'}, 
+    {id: 'arrays', name: 'Arrays'},
+    {id: 'loops', name: 'Loops'}, 
+    {id: 'iterators', name: 'Iterators'},
+    {id: 'objects', name: 'Objects'}, 
+    {id: 'classes', name: 'Classes'},
+    {id: 'compaTrans', name: 'Browser Compatibility & Transpilation'}, 
+    {id: 'modules', name: 'Modules'}, 
+    {id: 'promises', name: 'Promises'}, 
+    {id: 'asyncAwait', name: 'Async-Await'}, 
+    {id: 'requests', name: 'Requests'}
+];
 
 
 sideNavLinks.forEach(function(navItem) {
     const listItem = document.createElement('li');
-    listItem.innerHTML = `<a href='#'>${navItem}</a>`;
+    listItem.innerHTML = `<a href='#${navItem.id}'>${navItem.name}</a>`;
     sideNavListJS.appendChild(listItem);
 });
 
@@ -31,8 +45,6 @@ const addFocusToSideLinks = function() {
                 }
                 
             }
-        } 
-
-       
+        }
     });
 }();
