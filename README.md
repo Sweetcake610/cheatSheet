@@ -4,9 +4,9 @@
 Personal Coding CheatSheet. Provides detailed information on Front End Coding languages, such as HTML, CSS, and JS.
 
 ### Languages Used 
-  *HTML
-  *CSS
-  *JavaScript
+  * HTML
+  * CSS
+  * JavaScript
 
 
 ### Duration:
